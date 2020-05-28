@@ -14,4 +14,8 @@ public class HomePage {
         return this;
     }
 
+    public ArticlePage clickNewPostBtn() {
+
+        return new ArticlePage();
+    }
 }

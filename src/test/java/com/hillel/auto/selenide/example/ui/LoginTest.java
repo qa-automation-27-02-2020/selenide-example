@@ -1,7 +1,8 @@
-package com.hillel.auto.selenide.example;
+package com.hillel.auto.selenide.example.ui;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
+import com.hillel.auto.selenide.example.LoginPage;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 

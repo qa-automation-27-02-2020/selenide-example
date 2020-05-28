@@ -1,4 +1,4 @@
-package com.hillel.auto.selenide.example;
+package com.hillel.auto.selenide.example.ui;
 
 import com.codeborne.selenide.Configuration;
 
