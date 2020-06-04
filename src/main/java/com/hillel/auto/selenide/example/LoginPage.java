@@ -1,6 +1,7 @@
 package com.hillel.auto.selenide.example;
 
 import com.codeborne.selenide.Condition;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.pagefactory.ByChained;
 
@@ -20,11 +21,13 @@ public class LoginPage {
 
     private By loginInAuthForm = new ByChained(authForm, emailField);
 
+    @Step("Open Login page")
     public LoginPage openPage() {
         $(loginLink).shouldBe(Condition.visible).click();
         return this;
     }
 
+    @Step("Login as user")
     public HomePage login(String email, String password) {
         System.out.println("Login as user");
         inputEmail(email);
@@ -32,12 +35,14 @@ public class LoginPage {
         return clickSingInButton();
     }
 
+    @Step
     public void inputEmail(String email) {
         System.out.println("Input email");
 //        $(authForm).$(emailField).setValue(email);
         $(loginInAuthForm).setValue(email);
     }
 
+    @Step
     public void inputPassword(String password) {
         System.out.println("Input password");
        $(passwordField).setValue(password);
@@ -47,6 +52,7 @@ public class LoginPage {
        return $(".auth-page h1").text();
     }
 
+    @Step("Click Sing In button")
     public HomePage clickSingInButton() {
         System.out.println("Click Sing In button");
         $(signInBtn).click();

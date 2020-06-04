@@ -63,7 +63,7 @@ public class LoginTest extends TestBase {
                 .userShouldBeLoggedIn(userName);
     }
 
-    @Test
+//    @Test
     public void validationTest() {
         $("[href='#register']").click();
         $("[type='submit']").click();

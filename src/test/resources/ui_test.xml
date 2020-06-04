@@ -1,10 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="UI smoke test suite">
+<suite name="UI smoke test suite" parallel="methods" thread-count="${thread.count}">
 
     <test name="Login tests">
         <classes>
-            <class name="com.hillel.auto.selenide.example.ui.LoginTest"/>
+            <class name="com.hillel.auto.selenide.example.ui.ParallelTest"/>
         </classes>
     </test>
 
