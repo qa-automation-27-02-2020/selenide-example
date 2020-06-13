@@ -61,6 +61,7 @@ public class LoginTest extends TestBase {
                 .openPage()
                 .login(email, password)
                 .userShouldBeLoggedIn(userName);
+
     }
 
 //    @Test
