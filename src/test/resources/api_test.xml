@@ -5,6 +5,7 @@
     <test name="Registration tests">
         <classes>
             <class name="com.hillel.auto.selenide.example.api.RegistrationTest"/>
+            <class name="com.hillel.auto.selenide.example.api.LoginTest"/>
         </classes>
     </test>
 
