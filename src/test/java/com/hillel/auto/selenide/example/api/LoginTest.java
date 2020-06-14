@@ -31,7 +31,7 @@ public class LoginTest {
                 .when()
                 .post("https://conduit.productionready.io/api/users/login")
                 .then()
-                .statusCode(201)
+                .statusCode(200)
                 .body("user.email", equalTo(user.getEmail().toLowerCase()))
                 .body("user.username", equalTo(user.getUsername()))
                 .body("user.token", notNullValue())
