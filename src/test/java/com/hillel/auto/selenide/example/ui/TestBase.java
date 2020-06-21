@@ -12,6 +12,7 @@ public class TestBase {
     static {
         Configuration.baseUrl = "https://react-redux.realworld.io/";
         Configuration.screenshots = true;
+        Configuration.savePageSource = false;
         SelenideLogger.addListener("AllureSelenide",
                 new AllureSelenide()
                         .screenshots(true)
