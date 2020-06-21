@@ -3,7 +3,7 @@ version: '3.6'
 services:
   jenkins-local:
     network_mode: bridge
-    image: jenkins/jenkins:2.60.3
+    image: jenkins/jenkins:2.235.1
 #    depends_on:
 #      - selenoid
 #    links:
